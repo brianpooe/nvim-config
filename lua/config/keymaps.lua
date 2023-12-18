@@ -22,3 +22,18 @@ vim.keymap.set("n", "<leader>jc", vim.cmd.JestCoverage)
 
 -- undotree
 vim.keymap.set("n", "<leader>fu", vim.cmd.UndotreeToggle)
+
+vim.keymap.set("n", "<leader>in", "<cmd>Inspect<cr>", {
+  desc = "toggle inspect",
+})
+
+vim.keymap.set("n", "<leader>it", "<cmd>InspectTree<cr>", {
+  desc = "toggle inspect tree",
+})
+
+vim.keymap.set("n", "<leader>eq", "<cmd>EditQuery<cr>", {
+  desc = "toogle edit query",
+})
+vim.keymap.set("i", "ii", "<ESC>")
+
+vim.api.nvim_set_keymap("n", "<leader>sa", "<cmd>T2CShuffleAccents<cr>", { noremap = true, silent = true })

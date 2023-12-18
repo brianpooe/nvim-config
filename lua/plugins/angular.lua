@@ -1,3 +1,4 @@
 return {
-  { "elgiano/nvim-treesitter-angular", branch = "topic/jsx-fix" },
+  "dlvandenberg/nvim-treesitter",
+  branch = "feature-angular",
 }
