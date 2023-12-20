@@ -6,14 +6,14 @@ return {
   event = { "BufRead", "BufNewFile" },
   dependencies = {
     { "nvim-treesitter/nvim-treesitter-textobjects" },
-    { "nvim-treesitter/playground" },
   },
   config = function()
     local configs = require("nvim-treesitter.configs")
 
     configs.setup({
       ensure_installed = {
-
+        "css",
+        "scss",
         "angular",
         "tsx",
         "javascript",
@@ -32,7 +32,7 @@ return {
         "yaml",
         "jsdoc",
         "json",
-        "jsonc"
+        "jsonc",
       },
 
       -- Install parsers synchronously (only applied to `ensure_installed`)
