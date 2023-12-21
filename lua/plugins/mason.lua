@@ -15,6 +15,8 @@ return {
       "shellcheck",
       "shfmt",
       "flake8",
+      "css-lsp",
+      "tailwindcss-language-server",
     },
   },
 }

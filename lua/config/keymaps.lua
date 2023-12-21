@@ -1,6 +1,7 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
+local opts = { noremap = true, silent = true }
 
 -- move lines up and down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -38,3 +39,6 @@ vim.keymap.set(
 )
 -- silently delete the currently selected text without affecting the usual yank registers or clipboard.
 vim.keymap.set("x", "<leader>p", '"_dP')
+
+-- Select all
+vim.keymap.set("n", "<C-a>", "gg<S-v>G")

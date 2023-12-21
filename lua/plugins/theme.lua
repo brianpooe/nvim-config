@@ -1,5 +1,4 @@
 return {
-  -- { "brianpooe/darcula-solid.nvim", requires = "rktjmp/lush.nvim" },
   -- { "rebelot/kanagawa.nvim" },
   {
     "AlexvZyl/nordic.nvim",
